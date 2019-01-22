@@ -2,34 +2,141 @@
 <html>
     
 <head>
+    <meta charset="utf-8">
     <title>My first web page</title>
 </head>
     
 <body>
     <p>
         <h1>This is my first web page!</h1>   <!-- <p> is the paragraph tag -->
-        <h2>HTML is a fairly simple language</h2>
+        <h2>Formatting stuff</h2>
     </p>
     
     <p>
-    The < strong> tag will result in <strong>bold text</strong><br>
-    and the < em> tag will result in <em> itallicized text.</em>
+    The &lt;strong&gt; tag will result in <strong>bold text</strong><br>
+    and the &lt;em&gt; tag will result in <em> itallicized text.</em>
     </p>
     
     <p><strong>How </strong><em>exciting</em></p>
     <!-- <em> for emphasis (itallics)
          <strong> for bold -->
     <p>
-    I can also use the < br> command <br>
+    I can also use the &lt;br&gt; command <br>
     to break lines
     </p>
     
-    The < ul> tag is used to assemble <em>unordered</em> lists and the < li> tag separates list items:
+    The &lt;ul&gt; tag is used to assemble <em>unordered</em> lists and the &lt;li&gt; tag separates list items:
     <ul>
         <li>Learning HTML</li>
         <li>Is important</li>
         <li>For web development</li>
     </ul>
     
+    Similarly, the &lt;ol&gt; tag is very similar to the &lt;ul&gt; tag, except:
+    <ol>
+        <li>This uses</li>
+        <li>Ordered lists</li>
+        <li>Instead</li>
+    </ol>
+    
+    <p>
+    When confused, the best resourse for HTML (or really programming in general) is always 
+        <a href="https://www.google.com">Google</a>.<br>
+    HTML can embed links in text using
+    <code>
+        &lt;a href="https://www.google.com">Google&lt;/a&gt;
+    </code>
+    </p>
+    
+    <h2>Time for embedding images</h2>
+    
+    <p>
+    Use &lt;img src="https://www.hindilearn.in/images1/html.png" width="120" height="90" alt="Web tools!"&gt; to
+    embed images in web pages
+    </p>
+    <img src="https://www.hindilearn.in/images1/html.png" width="120" height="90" alt="Web tools!">
+        
+    <h2>Tables</h2>
+    <p>
+    Laziness time, I'm not writing out the code to make tables so if you want to see how to do it feel free to inspect the source code.
+    </p>
+    
+    <style>
+        td {
+            border: 1px solid #999;
+            padding: 0.1em 1em;
+        }
+    </style>
+    <table>
+        <tr>
+            <td>Row 1, cell 1</td>
+            <td>Row 1, cell 2</td>
+            <td>Row 1, cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, cell 1</td>
+            <td>Row 2, cell 2</td>
+            <td>Row 2, cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, cell 1</td>
+            <td>Row 3, cell 2</td>
+            <td>Row 3, cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, cell 1</td>
+            <td>Row 4, cell 2</td>
+            <td>Row 4, cell 3</td>
+        </tr>
+    </table>
+    
+    <h2>Form and input time</h2>
+    
+    &quot;Forms&quot; and &quot;inputs&quot; can be used (in tandom with <strike>better</strike> other programming languages) to collect user data.<br>
+    <form>
+    Input text box code: &lt;input type="text"&gt;<br>
+    type: text&emsp;<input type="text"><br>
+    type: pw&emsp;<input type="password"><br>
+    type: check 
+    <div>
+        <input type="checkbox" name="b1">
+        <label for="b1">B1</label>
+        <input type="checkbox" name="b2">
+        <label for="b2">B2</label>
+        <input type="checkbox" name="b3">
+        <label for="b3">B3</label>
+        <input type="checkbox" name="b4">
+        <label for="b4">B4</label><br>
+    </div>
+    type: radio     
+    <div>
+        <input type="radio" id="one" value="one" name="drone" checked>
+        <label for="one">One</label>
+        <input type="radio" id="two" value="two" name="drone">
+        <label for="two">Two</label>
+        <input type="radio" id="three" value="three" name="drone">
+        <label for="three">Three</label>
+        <input type="radio" id="four" value="four" name="drone">
+        <label for="four">Four</label>
+    </div>
+    
+    <p><strong>Textarea</strong> is a multi-line text input:<br>
+        &lt;textarea rows=&quot;5&quot; cols=&quot;30&quot;&gt;
+        Starting text &lt;/textarea&gt;
+    </p>
+    <textarea rows="5" cols="30">Starting text</textarea>
+    
+    <p>
+        <strong>Select</strong> is used to create a drop-down menu:
+    </p>
+        
+    <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option value="third option">Option 3</option>
+    </select>
+        
+    
 </body>
+        
 </html>
